@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Art Gallery - All Pages</title>
+  <title>Art Gallery</title>
+
   <style>
     body {
       background-color: black;
@@ -10,21 +11,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    
-    section {
-      min-height: 100vh;
-      padding: 40px 20px;
-      border-bottom: 2px solid #333;
-    }
-    
-    #home {
-      background-image: url('babar-kohli.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-    
+
     header {
       position: fixed;
       top: 0;
@@ -35,28 +22,62 @@
       z-index: 1000;
       border-bottom: 1px solid #333;
     }
-    
+
     nav a {
       margin-right: 15px;
       color: white;
       text-decoration: none;
-      padding: 5px 10px;
     }
-    
+
     nav a:hover {
-      background-color: #333;
-      border-radius: 3px;
+      text-decoration: underline;
     }
-    
+
     main {
-      margin-top: 60px;
+      margin-top: 70px;
     }
-    
+
+    section {
+      min-height: 100vh;
+      padding: 40px 20px;
+      border-bottom: 2px solid #333;
+    }
+
+    #home {
+      background-image: url('babar-kohli.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* ===== GALLERY ===== */
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 5px;
+    }
+
+    /* media query */
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+      }
+    }
+
+    /* forms */
     form {
       max-width: 400px;
       margin-top: 20px;
     }
-    
+
     input, textarea {
       width: 100%;
       padding: 8px;
@@ -64,32 +85,25 @@
       background-color: #222;
       border: 1px solid #444;
       color: white;
-      border-radius: 3px;
     }
-    
+
     button {
+      margin-top: 10px;
+      padding: 10px 20px;
       background-color: #444;
       color: white;
       border: none;
-      padding: 10px 20px;
       cursor: pointer;
-      border-radius: 3px;
-      margin-top: 10px;
     }
-    
+
     button:hover {
       background-color: #555;
-    }
-    
-    p {
-      margin: 10px 0;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
   <header>
     <nav>
       <a href="#home">Home</a>
@@ -101,34 +115,43 @@
   </header>
 
   <main>
-    
-    <!-- Home / Gallery Section -->
+
+    <!-- Home / Gallery -->
     <section id="home">
       <h1>Art Gallery</h1>
 
       <p>
-        Welcome to our art gallery, where emotion, ambition, and inspiration
-        are captured through timeless artworks.
+        Welcome to our art gallery, where emotion, ambition,
+        and inspiration are captured through timeless artworks.
       </p>
 
       <h2>Featured Artwork</h2>
 
       <p>
-        This cinematic artwork represents the journey, aspiration,
-        and legacy of greatness.
+        This cinematic artwork represents the journey,
+        aspiration, and legacy of greatness.
       </p>
+
+      <h2>Gallery</h2>
+
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1593766788306-28561086694e">
+        <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e">
+        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e">
+        <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d">
+      </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about">
       <h1>About Our Gallery</h1>
       <p>
-        This art gallery is a space where creativity, passion,
-        and storytelling come together.
+        This art gallery is a space where creativity,
+        passion, and storytelling come together.
       </p>
     </section>
 
-    <!-- Sign In Section -->
+    <!-- Sign In -->
     <section id="signin">
       <h1>Sign In</h1>
 
@@ -147,7 +170,7 @@
       </form>
     </section>
 
-    <!-- Sign Up Section -->
+    <!-- Sign Up -->
     <section id="signup">
       <h1>Create Account</h1>
 
@@ -171,7 +194,7 @@
       </form>
     </section>
 
-    <!-- Feedback Section -->
+    <!-- Feedback -->
     <section id="feedback">
       <h1>Feedback</h1>
 
