@@ -1,0 +1,49 @@
+/* TYPE SELECTOR */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* HEADER + NAVIGATION */
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px 20px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* PSEUDO CLASS */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CLASS SELECTOR */
+.content {
+  padding: 20px;
+}
+
+/* ID SELECTOR */
+#page-title {
+  margin-top: 20px;
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
